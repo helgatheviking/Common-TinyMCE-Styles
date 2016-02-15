@@ -16,7 +16,7 @@
 	background: #000;
 	color: #FFF;
 }
-a.cts-button, button.cts-button {
+a.cts-button, button.cts-button, input[type=submit].cts-button {
 	display: inline-block;
 	outline: none;
 	cursor: pointer;
@@ -51,7 +51,7 @@ a.cts-button, button.cts-button {
 }
 
 
-a.cts-ghost-button, button.cts-ghost-button {
+a.cts-ghost-button, button.cts-ghost-button, input[type=submit].cts-ghost-button {
 	display: inline-block;
 	outline: none;
 	cursor: pointer;
@@ -86,7 +86,7 @@ a.cts-ghost-button, button.cts-ghost-button {
 
 .cts-use-fancy-buttons{
 
-	a.cts-button, button.cts-button {
+	a.cts-button, button.cts-button, input[type=submit].cts-button {
 		
 		&:after, &:before {
 			position: absolute;

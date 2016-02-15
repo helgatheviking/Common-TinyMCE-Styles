@@ -14,7 +14,7 @@
   background: #000;
   color: #fff; }
 
-a.cts-button, button.cts-button {
+a.cts-button, button.cts-button, input.cts-button {
   display: inline-block;
   outline: none;
   cursor: pointer;
@@ -31,18 +31,18 @@ a.cts-button, button.cts-button {
   /* needed for fancy buttons */
   border-color: #999;
   color: #fff; }
-  a.cts-button:hover, button.cts-button:hover {
+  a.cts-button:hover, button.cts-button:hover, input.cts-button:hover {
     background-color: #808080;
     border-color: #808080;
     color: #fff; }
-  a.cts-button.alt-color, button.cts-button.alt-color {
+  a.cts-button.alt-color, button.cts-button.alt-color, input.cts-button.alt-color {
     border-color: #ccc;
     background-color: #ccc; }
-    a.cts-button.alt-color:hover, button.cts-button.alt-color:hover {
+    a.cts-button.alt-color:hover, button.cts-button.alt-color:hover, input.cts-button.alt-color:hover {
       background-color: #b3b3b3;
       border-color: #b3b3b3; }
 
-a.cts-ghost-button, button.cts-ghost-button {
+a.cts-ghost-button, button.cts-ghost-button, input.cts-ghost-button {
   display: inline-block;
   outline: none;
   cursor: pointer;
@@ -57,14 +57,14 @@ a.cts-ghost-button, button.cts-ghost-button {
   border: 0.1875em solid;
   border-color: #999;
   color: #999; }
-  a.cts-ghost-button:hover, button.cts-ghost-button:hover {
+  a.cts-ghost-button:hover, button.cts-ghost-button:hover, input.cts-ghost-button:hover {
     background-color: #999;
     border-color: #999;
     color: #fff; }
-  a.cts-ghost-button.alt-color, button.cts-ghost-button.alt-color {
+  a.cts-ghost-button.alt-color, button.cts-ghost-button.alt-color, input.cts-ghost-button.alt-color {
     border-color: #ccc;
     color: #ccc; }
-    a.cts-ghost-button.alt-color:hover, button.cts-ghost-button.alt-color:hover {
+    a.cts-ghost-button.alt-color:hover, button.cts-ghost-button.alt-color:hover, input.cts-ghost-button.alt-color:hover {
       background-color: #ccc;
       border-color: #ccc;
       color: #fff; }
