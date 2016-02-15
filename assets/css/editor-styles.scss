@@ -1,0 +1,127 @@
+.cts-message-box {
+	border-top: 3px solid $message-color;
+	color: $message-color !important;
+	background: lighten( $message-color, 75% );
+	padding: 1em;
+	margin-bottom: 1.5em;
+}
+
+.cts-warning-box {
+	border-top: 3px solid $warning-color;
+	color: $warning-color !important;
+	background: lighten( $warning-color, 75% );
+}
+
+.cts-inverted {
+	background: #000;
+	color: #FFF;
+}
+a.cts-button, button.cts-button {
+	display: inline-block;
+	outline: none;
+	cursor: pointer;
+	text-align: center;
+	font-weight: bold;
+	position: relative;
+	overflow: hidden;
+	padding: .6875em 1em;
+	text-decoration: none !important;
+	box-shadow: none;
+
+	border: 0px solid;
+	background-color: $accent-color;
+	opacity: .999; /* needed for fancy buttons */
+	border-color: $accent-color;
+	color: #FFF;
+	
+	
+	&:hover{
+		background-color: darken( $accent-color, 10% );
+		border-color: darken( $accent-color, 10% );
+		color: #FFF;
+	}
+	&.alt-color{
+		border-color: $alt-color;
+		background-color: $alt-color;
+		&:hover{
+			background-color: darken( $alt-color, 10% );
+			border-color: darken( $alt-color, 10% );
+		}
+	}
+}
+
+
+a.cts-ghost-button, button.cts-ghost-button {
+	display: inline-block;
+	outline: none;
+	cursor: pointer;
+	text-align: center;
+	font-weight: bold;
+	position: relative;
+	overflow: hidden;
+	padding: .5em 1em;
+	text-decoration: none !important;
+	text-shadow: none;
+	box-shadow: none;
+
+	border: .1875em solid;
+	border-color: $accent-color;
+	color: $accent-color;
+	&:hover{
+		background-color: $accent-color;
+		border-color: $accent-color;
+		color: #FFF;
+	}
+	&.alt-color{
+		border-color: $alt-color;
+		color: $alt-color;
+		&:hover{
+			background-color: $alt-color;
+			border-color: $alt-color;
+			color: #FFF;
+		}
+	}
+}
+
+
+.cts-use-fancy-buttons{
+
+	a.cts-button, button.cts-button {
+		
+		&:after, &:before {
+			position: absolute;
+			content: " ";
+			top: 0;
+			left: 0;
+		}
+
+		&:before {
+			-webkit-box-sizing: content-box;
+			-moz-box-sizing: content-box;
+			box-sizing: content-box;
+			width: 50%;
+			border-right: 5em solid $accent-color;
+			border-top: 5em solid darken( $accent-color, 5% );
+			margin-left: -50%;
+			z-index: -299;
+			display: block;
+			transition: all .4s ease-in;
+		}
+
+		&:after {
+			background: $accent-color;
+			width: 100%;
+			height: 100%;
+			z-index: -300;
+		}
+
+		&:focus:before, &:hover:before {
+			width: 160%;
+		}
+	}
+
+}
+
+.smaller {
+	font-size: 75%;
+}
